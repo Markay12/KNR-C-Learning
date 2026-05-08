@@ -1,10 +1,13 @@
-#include <stdio.h>
-#include <string.h>
+/* This is Mark's attempt at writing hello_world.c by hand in C */
 
-void main()
+#include <stdio.h>
+
+int main(void)
 {
-	printf("hello world!");
-	return( 1 );
+	printf( "hello, world!\n" );
+	printf( "hello, world with weird escape sequence \a\n" );
+
+	return 0; /* end of program return */
 }
 
-main();
+/* END OF FILE */
