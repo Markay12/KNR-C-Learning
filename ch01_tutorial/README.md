@@ -105,3 +105,5 @@ printf( "Mark's temperature this morning was %d! degrees!", marks_temperature );
 ```
 
 In this case, %d would be replaced with the integer value for Mark's temperature.
+
+printf() is not part of the C language itself. That is because, if you remember, C doesn't have input or output build into it. I/O in C is defined in the standard library. The general behavior of printf() is defined in the ANSI standard. Similarly, the function scanf() is the same thing but instead reads in data rather than writes out.
