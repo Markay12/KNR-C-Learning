@@ -21,6 +21,5 @@ all: $(BINS)
 
 clean:
 	rm -rf $(BINS)
-	find . -type f -executable -delete
 
 .PHONY: all clean

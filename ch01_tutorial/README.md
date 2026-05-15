@@ -10,6 +10,7 @@
    1. While Loop
    2. For Loop
 4. printf()
+5. fahr_to_cel.c
 
 
 ## Basics
@@ -107,3 +108,18 @@ printf( "Mark's temperature this morning was %d! degrees!", marks_temperature );
 In this case, %d would be replaced with the integer value for Mark's temperature.
 
 printf() is not part of the C language itself. That is because, if you remember, C doesn't have input or output build into it. I/O in C is defined in the standard library. The general behavior of printf() is defined in the ANSI standard. Similarly, the function scanf() is the same thing but instead reads in data rather than writes out.
+
+## fahr_to_cel.c
+Now would be a good time to take a look at the program written fahr_to_cel.c. This program converts fahrenheit temperatures from 0-300 in steps of 20. I will continue to talk about this specific program as well as other mutations of it from here on. It would make sense for you to take a look. 
+
+* If an arithmetic operator has one floating-point operand and one integer operand, the integer will be converted to a floating point number before the computation is performed. You can cast the integer to a float to be precise in notifying what is happening.
+* The printf() conversion specifies `%3.0f` which says that a floating point number (this case fahr) is to be printed at least three characters wide, with no decimal point and no fraction digits. Think to yourself what this means for celsius (`%6.1f`).
+
+```C
+printf( "%d" )      /* print as a decimal integer */
+printf( "%6d" )     /* print as decimal integer, at least 6 characters wide */
+printf( "%f" )      /* print as a floating point */
+printf( "%6f" )     /* print as a floating point, at least 6 characters wide */
+printf( "%.2f" )    /* print as floating point, 2 characters after decimal point */
+printf( "%6.2f" )   /* print as floating point, at least 6 wide and 2 after decimal point */
+```
